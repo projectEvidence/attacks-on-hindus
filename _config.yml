@@ -2,3 +2,6 @@ title: Attacks on Bangladeshi Hindus
 description: Shows the truth, expose the lies
 google_analytics:
 theme: jekyll-theme-dinky
+
+paginate: 5
+paginate_path: "/incidents/page:num"
