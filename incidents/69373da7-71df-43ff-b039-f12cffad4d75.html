@@ -8,9 +8,11 @@
   function gtag() {
     dataLayer.push(arguments);
   }
+  const u = new URL(window.location.href);
+  console.log(`domain: ${u.hostname}`);
   gtag('js', new Date());
   gtag('config', 'G-EY8TB5JR6N', {
-    cookie_domain: new URL(window.location.href).hostname,
+    cookie_domain: u.hostname,
     cookie_flags: 'SameSite=None;Secure'
   }); // https://www.tinstar.co.uk/studio-blog/some-cookies-are-misusing-the-recommended-samesite-attribute-how-to-fix/
 </script>
